@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home Page</title>
+    </head>
+    <body>
+        <h1>Welcome to Our Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h2>Introduction</h2>
+            <p>
+                This is a practice assignment covering all HTML topics taught so
+                far.
+            </p>
+        </section>
+        <section>
+            <h2>Responsive Image</h2>
+            <picture>
+                <source
+                    srcset="https://picsum.photos/450"
+                    media="(max-width: 600px)"
+                />
+                <source
+                    srcset="https://picsum.photos/850"
+                    media="(max-width: 1200px)"
+                />
+                <img src="https://picsum.photos/1500" alt="Responsive Image" />
+            </picture>
+        </section>
+        <section>
+            <h2>Form</h2>
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <p>
+                        <label for="name">Full Name:</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                            placeholder="Enter your full name"
+                        />
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            placeholder="Enter your email"
+                        />
+                    </p>
+
+                    <p>
+                        <label for="dob">Date of Birth:</label>
+                        <input
+                            type="date"
+                            id="dob"
+                            name="dob"
+                            min="1900-01-01"
+                            max="2025-12-31"
+                        />
+                    </p>
+
+                    <p>
+                        <label for="comments">Your Comments:</label>
+                        <textarea
+                            id="comments"
+                            name="comments"
+                            rows="4"
+                            spellcheck="true"
+                            placeholder="Write your comments..."
+                        ></textarea>
+                    </p>
+
+                    <p>
+                        <label for="progress">Completion Progress:</label>
+                        <progress id="progress" value="70" max="100">
+                            70%
+                        </progress>
+                    </p>
+                </fieldset>
+                <p><input type="submit" value="Submit" /></p>
+            </form>
+        </section>
+    </body>
+</html>
