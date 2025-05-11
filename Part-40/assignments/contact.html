@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact Page</title>
+    </head>
+    <body>
+        <div>
+            <h1>Contact Us</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h2>Contact Form</h2>
+                <form>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <p>
+                            <label for="fullname">Full Name:</label>
+                            <input
+                                type="text"
+                                id="fullname"
+                                placeholder="Enter your name"
+                                required
+                            />
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Enter your email"
+                                required
+                            />
+                        </p>
+                        <p>
+                            <label for="phone">Phone:</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                placeholder="Enter your phone number"
+                            />
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Preferred Contact Date</legend>
+                        <p>
+                            <label for="contact-datetime">Datetime:</label>
+                            <input
+                                type="datetime-local"
+                                id="contact-datetime"
+                                min="2025-02-01T09:00"
+                                max="2025-02-28T17:00"
+                            />
+                        </p>
+                        <p>
+                            <label for="contact-date">Date:</label>
+                            <input
+                                type="date"
+                                id="contact-date"
+                                min="2025-02-01"
+                                max="2025-02-28"
+                            />
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Feedback</legend>
+                        <p>
+                            <label for="rating">Rating:</label>
+                            <input
+                                type="range"
+                                id="rating"
+                                min="1"
+                                max="5"
+                                step="1"
+                                value="3"
+                            />
+                        </p>
+                        <p>
+                            <label for="color">Color Preference:</label>
+                            <input type="color" id="color" value="#ffcc00" />
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Subscribe</legend>
+                        <p>
+                            <input type="checkbox" id="subscribe-newsletter" />
+                            <label for="subscribe-newsletter"
+                                >Subscribe to Newsletter</label
+                            >
+                        </p>
+                    </fieldset>
+
+                    <p>
+                        <input type="submit" value="Submit" />
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

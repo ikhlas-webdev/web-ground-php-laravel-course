@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home Page</title>
+    </head>
+    <body>
+        <div>
+            <h1>Welcome to Our Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h2>Home Page Form</h2>
+                <form>
+                    <fieldset>
+                        <legend>Personal Details</legend>
+                        <p>
+                            <label for="fname">First Name:</label>
+                            <input
+                                type="text"
+                                id="fname"
+                                placeholder="Enter your first name"
+                                required
+                            />
+                        </p>
+                        <p>
+                            <label for="lname">Last Name:</label>
+                            <input
+                                type="text"
+                                id="lname"
+                                placeholder="Enter your last name"
+                                required
+                            />
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Enter your email"
+                                required
+                            />
+                        </p>
+                        <p>
+                            <label for="phone">Phone:</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                placeholder="Enter your phone number"
+                            />
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Preferences</legend>
+                        <p>
+                            <label for="color">Favorite Color:</label>
+                            <input type="color" id="color" value="#00ff00" />
+                        </p>
+                        <p>
+                            <label for="amount">Amount:</label>
+                            <input
+                                type="number"
+                                id="amount"
+                                min="1"
+                                max="100"
+                                step="5"
+                                value="10"
+                            />
+                        </p>
+                        <p>
+                            <label for="price">Price Range:</label>
+                            <input
+                                type="range"
+                                id="price"
+                                min="1000"
+                                max="5000"
+                                step="500"
+                                value="3000"
+                            />
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Date and Time</legend>
+                        <p>
+                            <label for="datetime-picker">Datetime:</label>
+                            <input
+                                type="datetime-local"
+                                id="datetime-picker"
+                                min="2025-01-01T08:00"
+                                max="2025-01-31T18:00"
+                            />
+                        </p>
+                        <p>
+                            <label for="date-picker">Date:</label>
+                            <input
+                                type="date"
+                                id="date-picker"
+                                min="2025-01-01"
+                                max="2025-01-31"
+                            />
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Options</legend>
+                        <p>
+                            <input type="checkbox" id="agree" />
+                            <label for="agree"
+                                >I agree to the terms and conditions.</label
+                            >
+                        </p>
+                        <p>
+                            <input type="radio" id="yes" name="subscription" />
+                            <label for="yes">Subscribe to Newsletter</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="no" name="subscription" />
+                            <label for="no">Do not Subscribe</label>
+                        </p>
+                    </fieldset>
+
+                    <p>
+                        <input type="submit" value="Submit" />
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

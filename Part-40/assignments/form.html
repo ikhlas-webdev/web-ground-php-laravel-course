@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form Page</title>
+    </head>
+    <body>
+        <div>
+            <h1>Form Page</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h2>Form Example</h2>
+                <form>
+                    <fieldset>
+                        <legend>General Information</legend>
+                        <p>
+                            <label for="name">Name:</label>
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Enter your name"
+                                required
+                            />
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Enter your email"
+                                required
+                            />
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Preferences</legend>
+                        <p>
+                            <label for="fav-color">Favorite Color:</label>
+                            <input
+                                type="color"
+                                id="fav-color"
+                                value="#ffffff"
+                            />
+                        </p>
+                        <p>
+                            <label for="range">Select Range:</label>
+                            <input
+                                type="range"
+                                id="range"
+                                min="1"
+                                max="100"
+                                step="10"
+                            />
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Date and Time</legend>
+                        <p>
+                            <label for="datetime">Datetime:</label>
+                            <input
+                                type="datetime-local"
+                                id="datetime"
+                                min="2025-02-01T09:00"
+                                max="2025-02-28T17:00"
+                            />
+                        </p>
+                    </fieldset>
+
+                    <p>
+                        <input type="submit" value="Submit" />
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

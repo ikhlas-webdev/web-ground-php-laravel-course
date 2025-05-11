@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About Page</title>
+    </head>
+    <body>
+        <div>
+            <h1>About Us</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h2>About Page Form</h2>
+                <form>
+                    <fieldset>
+                        <legend>User Details</legend>
+                        <p>
+                            <label for="name">Full Name:</label>
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Enter your name"
+                                required
+                            />
+                        </p>
+                        <p>
+                            <label for="email">Email Address:</label>
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Enter your email"
+                                required
+                            />
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Preferences</legend>
+                        <p>
+                            <label for="color">Choose a Color:</label>
+                            <input type="color" id="color" value="#ff0000" />
+                        </p>
+                        <p>
+                            <label for="price">Preferred Price Range:</label>
+                            <input
+                                type="range"
+                                id="price"
+                                min="500"
+                                max="5000"
+                                step="500"
+                                value="2500"
+                            />
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Date and Time</legend>
+                        <p>
+                            <label for="datetime">Select Datetime:</label>
+                            <input
+                                type="datetime-local"
+                                id="datetime"
+                                min="2025-01-01T00:00"
+                                max="2025-12-31T23:59"
+                            />
+                        </p>
+                        <p>
+                            <label for="date">Choose a Date:</label>
+                            <input
+                                type="date"
+                                id="date"
+                                min="2025-01-01"
+                                max="2025-12-31"
+                            />
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Options</legend>
+                        <p>
+                            <input type="checkbox" id="subscribe" />
+                            <label for="subscribe">Subscribe to Updates</label>
+                        </p>
+                        <p>
+                            <input
+                                type="radio"
+                                id="option1"
+                                name="preference"
+                            />
+                            <label for="option1">Option 1</label>
+                        </p>
+                        <p>
+                            <input
+                                type="radio"
+                                id="option2"
+                                name="preference"
+                            />
+                            <label for="option2">Option 2</label>
+                        </p>
+                    </fieldset>
+
+                    <p>
+                        <input type="submit" value="Submit" />
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
