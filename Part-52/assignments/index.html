@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Home - HTML Assignment</title>
+    </head>
+    <body>
+        <header>
+            <h1 title="Welcome to the Home Page">Welcome to My Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Introduction</h2>
+                <p>
+                    This is the <mark>home page</mark> of the assignment. It
+                    uses <strong>all HTML topics</strong> taught so far.
+                </p>
+                <p>
+                    Here's a <br />
+                    line break and an horizontal rule below:
+                </p>
+                <hr />
+            </section>
+
+            <section>
+                <h3>Quick Links</h3>
+                <p>Jump to: <a href="#bottom">Bottom of Page</a></p>
+                <p>
+                    External Links:
+                    <a href="https://www.google.com">Google</a> |
+                    <a href="https://www.flipkart.com">Flipkart</a>
+                </p>
+            </section>
+
+            <section>
+                <h3>Lists Demo</h3>
+                <ul>
+                    <li>Unordered Item 1</li>
+                    <li>
+                        Unordered Item 2
+                        <ol>
+                            <li>Nested Ordered Item 1</li>
+                            <li>Nested Ordered Item 2</li>
+                        </ol>
+                    </li>
+                </ul>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>HyperText Markup Language</dd>
+                    <dt>CSS</dt>
+                    <dd>Cascading Style Sheets</dd>
+                </dl>
+            </section>
+
+            <section>
+                <h3>Image & Video Demo</h3>
+                <div>
+                    <img
+                        src="https://picsum.photos/300/200?random=1"
+                        alt="Random Image 1"
+                    />
+                    <p><small>Image from Picsum</small></p>
+                </div>
+                <div>
+                    <video
+                        width="300"
+                        height="200"
+                        controls
+                        poster="https://picsum.photos/300/200?random=2"
+                    >
+                        <source
+                            src="https://cdn.pixabay.com/video/2023/10/18/185956-875805782_tiny.mp4"
+                            type="video/mp4"
+                        />
+                        Your browser does not support the video tag.
+                    </video>
+                    <p><small>Sample Video</small></p>
+                </div>
+            </section>
+
+            <section>
+                <h3>Text Formatting</h3>
+                <p>
+                    This is <b>bold</b>, <i>italic</i>,
+                    <strong>important</strong>, and <em>emphasized</em> text.
+                </p>
+                <p>
+                    <del>Old text</del> replaced with <ins>new text</ins>.
+                    H<sub>2</sub>O and x<sup>2</sup>.
+                </p>
+                <small>Small text here.</small>
+            </section>
+
+            <section>
+                <h3>Code Example</h3>
+                <pre>
+                <code><p>This is a paragraph</p></code>
+            </pre>
+                <p>
+                    Press <kbd>Ctrl + S</kbd> to save. Variable: <var>x</var>.
+                    Output: <samp>Hello</samp>.
+                </p>
+            </section>
+
+            <section>
+                <h3>Table Demo</h3>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th colspan="2">Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John</td>
+                            <td>Age: 25</td>
+                            <td>City: NY</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">End of Table</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </main>
+
+        <aside>
+            <h4>Aside Content</h4>
+            <p>This is a <q>short quote</q> in an aside.</p>
+        </aside>
+
+        <footer>
+            <p>© 2025 My Website | <a href="#top">Back to Top</a></p>
+            <div id="bottom"></div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Gallery - HTML Assignment</title>
+    </head>
+    <body>
+        <header>
+            <h1 title="Gallery">Image & Video Gallery</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Our Media</h2>
+                <p>
+                    Here are some <mark>beautiful</mark> images and videos from
+                    Picsum and Mixkit:
+                </p>
+                <div>
+                    <img
+                        src="https://picsum.photos/300/200?random=4"
+                        alt="Random Image 4"
+                    />
+                    <br />
+                    <picture>
+                        <source
+                            media="(max-width: 600px)"
+                            srcset="https://picsum.photos/200/150?random=5"
+                        />
+                        <img
+                            src="https://picsum.photos/300/200?random=6"
+                            alt="Responsive Image"
+                        />
+                    </picture>
+                </div>
+                <div>
+                    <video
+                        width="300"
+                        height="200"
+                        controls
+                        preload="metadata"
+                        poster="https://picsum.photos/300/200?random=7"
+                    >
+                        <source
+                            src="https://cdn.pixabay.com/video/2023/03/06/152940-805027999_tiny.mp4"
+                            type="video/mp4"
+                        />
+                        Your browser does not support the video tag.
+                    </video>
+                    <p><small>Gallery Video</small></p>
+                </div>
+                <hr />
+            </section>
+
+            <section>
+                <h3>Image Map</h3>
+                <img
+                    src="https://picsum.photos/300/200?random=8"
+                    alt="Map Image"
+                    usemap="#image-map"
+                />
+                <map name="image-map">
+                    <area
+                        shape="rect"
+                        coords="0,0,100,100"
+                        href="https://www.google.com"
+                        alt="Google Link"
+                    />
+                </map>
+            </section>
+
+            <section>
+                <h3>List of Media</h3>
+                <ol>
+                    <li>
+                        <a href="https://picsum.photos/300/200?random=9"
+                            >Image 1</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://cdn.pixabay.com/video/2023/03/06/152940-805027999_tiny.mp4"
+                            >Video 1</a
+                        >
+                    </li>
+                </ol>
+                <dl>
+                    <dt>Picsum</dt>
+                    <dd>Random image generator</dd>
+                    <dt>Mixkit</dt>
+                    <dd>Free stock videos</dd>
+                </dl>
+            </section>
+
+            <section>
+                <h3>Code for Media</h3>
+                <pre>
+                <code><video controls><source src="video.mp4"></video></code>
+            </pre>
+                <p>
+                    Press <kbd>F5</kbd> to refresh. Variable: <var>media</var>.
+                    Output: <samp>Loaded</samp>.
+                </p>
+            </section>
+
+            <section>
+                <h3>Media Info</h3>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Image</td>
+                            <td>300x200</td>
+                        </tr>
+                        <tr>
+                            <td>Video</td>
+                            <td>300x200</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">End</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </main>
+
+        <aside>
+            <p><q>Media enhances websites.</q></p>
+        </aside>
+
+        <footer>
+            <p><small>© 2025</small> | <a href="index.html">Home</a></p>
+        </footer>
+    </body>
+</html>
