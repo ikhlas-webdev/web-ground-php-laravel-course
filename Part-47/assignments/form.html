@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form Page</title>
+    </head>
+    <body>
+        <h1>Submit Your Details</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <h2>Fill out the form</h2>
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <p>
+                        <label for="name">Full Name:</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                            placeholder="Enter your full name"
+                        />
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            placeholder="Enter your email"
+                        />
+                    </p>
+
+                    <p>
+                        <label for="dob">Date of Birth:</label>
+                        <input
+                            type="date"
+                            id="dob"
+                            name="dob"
+                            min="1900-01-01"
+                            max="2025-12-31"
+                        />
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            pattern="[0-9]{10}"
+                            required
+                            placeholder="Enter 10-digit phone number"
+                        />
+                    </p>
+
+                    <p>
+                        <label for="website">Personal Website:</label>
+                        <input
+                            type="url"
+                            id="website"
+                            name="website"
+                            placeholder="Enter your website URL"
+                        />
+                    </p>
+
+                    <p>
+                        <label for="color">Favorite Color:</label>
+                        <input type="color" id="color" name="color" />
+                    </p>
+
+                    <p>
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="language">Preferred Language:</label>
+                        <input list="languages" id="language" name="language" />
+                        <datalist id="languages">
+                            <option value="English"></option>
+                            <option value="Bengali"></option>
+                            <option value="Hindi"></option>
+                            <option value="Spanish"></option>
+                        </datalist>
+                    </p>
+
+                    <p><label for="message">Your Comments:</label></p>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        spellcheck="true"
+                        placeholder="Write your comments..."
+                    ></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Experience</legend>
+
+                    <p>
+                        <label for="experience">Years of Experience:</label>
+                        <input
+                            type="number"
+                            id="experience"
+                            name="experience"
+                            min="0"
+                            max="50"
+                        />
+                    </p>
+
+                    <p>
+                        <label for="progress">Form Completion Progress:</label>
+                        <progress id="progress" value="50" max="100">
+                            50%
+                        </progress>
+                    </p>
+
+                    <p>
+                        <label for="satisfaction">Satisfaction Meter:</label>
+                        <meter id="satisfaction" value="8" min="0" max="10">
+                            8/10
+                        </meter>
+                    </p>
+                </fieldset>
+
+                <p><input type="submit" value="Submit" /></p>
+            </form>
+        </section>
+    </body>
+</html>

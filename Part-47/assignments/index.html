@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home Page</title>
+    </head>
+    <body>
+        <h1>Welcome to Our Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <h2>Introduction</h2>
+            <p>
+                This is a practice assignment covering all HTML topics taught so
+                far.
+            </p>
+        </section>
+
+        <section>
+            <h2>Code Example</h2>
+            <pre>
+            <code>
+                function greet() {
+                    console.log("Hello, World!");
+                }
+            </code>
+        </pre>
+        </section>
+
+        <section>
+            <h2>Keyboard Input</h2>
+            <p>To refresh the page, press <kbd>Ctrl</kbd> + <kbd>R</kbd>.</p>
+        </section>
+
+        <section>
+            <h2>Mathematical Variables</h2>
+            <p>The area of a circle is calculated as <var>πr²</var>.</p>
+        </section>
+
+        <section>
+            <h2>Sample Output</h2>
+            <p>Example system output:</p>
+            <samp>File uploaded successfully.</samp>
+        </section>
+
+        <section>
+            <h2>Responsive Image</h2>
+            <picture>
+                <source
+                    srcset="https://picsum.photos/450"
+                    media="(max-width: 600px)"
+                />
+                <source
+                    srcset="https://picsum.photos/850"
+                    media="(max-width: 1200px)"
+                />
+                <img src="https://picsum.photos/1500" alt="Responsive Image" />
+            </picture>
+        </section>
+
+        <section>
+            <h2>Form</h2>
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <p>
+                        <label for="name">Full Name:</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                            placeholder="Enter your full name"
+                        />
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            placeholder="Enter your email"
+                        />
+                    </p>
+
+                    <p>
+                        <label for="dob">Date of Birth:</label>
+                        <input
+                            type="date"
+                            id="dob"
+                            name="dob"
+                            min="1900-01-01"
+                            max="2025-12-31"
+                        />
+                    </p>
+
+                    <p>
+                        <label for="color">Favorite Color:</label>
+                        <input type="color" id="color" name="color" />
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            pattern="[0-9]{10}"
+                            required
+                            placeholder="Enter 10-digit phone number"
+                        />
+                    </p>
+
+                    <p>
+                        <label for="website">Personal Website:</label>
+                        <input
+                            type="url"
+                            id="website"
+                            name="website"
+                            placeholder="Enter your website URL"
+                        />
+                    </p>
+
+                    <p>
+                        <label for="comments">Your Comments:</label>
+                        <textarea
+                            id="comments"
+                            name="comments"
+                            rows="4"
+                            spellcheck="true"
+                            placeholder="Write your comments..."
+                        ></textarea>
+                    </p>
+
+                    <p>
+                        <label for="progress">Completion Progress:</label>
+                        <progress id="progress" value="70" max="100">
+                            70%
+                        </progress>
+                    </p>
+
+                    <p>
+                        <label for="satisfaction">Satisfaction Meter:</label>
+                        <meter id="satisfaction" value="8" min="0" max="10">
+                            8/10
+                        </meter>
+                    </p>
+                </fieldset>
+                <p><input type="submit" value="Submit" /></p>
+            </form>
+        </section>
+    </body>
+</html>
