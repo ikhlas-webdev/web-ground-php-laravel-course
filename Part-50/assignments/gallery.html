@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Gallery - HTML Assignment</title>
+    </head>
+    <body>
+        <header>
+            <h1 title="Gallery">Image Gallery</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Our Images</h2>
+                <p>Here are some <mark>beautiful</mark> images from Picsum:</p>
+                <div>
+                    <img
+                        src="https://picsum.photos/300/200?random=3"
+                        alt="Random Image 3"
+                    />
+                    <br />
+                    <picture>
+                        <source
+                            media="(max-width: 600px)"
+                            srcset="https://picsum.photos/200/150?random=4"
+                        />
+                        <img
+                            src="https://picsum.photos/300/200?random=5"
+                            alt="Responsive Image"
+                        />
+                    </picture>
+                </div>
+                <hr />
+            </section>
+
+            <section>
+                <h3>Image Map</h3>
+                <img
+                    src="https://picsum.photos/300/200?random=6"
+                    alt="Map Image"
+                    usemap="#image-map"
+                />
+                <map name="image-map">
+                    <area
+                        shape="rect"
+                        coords="0,0,100,100"
+                        href="https://www.google.com"
+                        alt="Google Link"
+                    />
+                </map>
+            </section>
+
+            <section>
+                <h3>List of Images</h3>
+                <ol>
+                    <li>
+                        <a href="https://picsum.photos/300/200?random=7"
+                            >Image 1</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://picsum.photos/300/200?random=8"
+                            >Image 2</a
+                        >
+                    </li>
+                </ol>
+                <dl>
+                    <dt>Picsum</dt>
+                    <dd>Random image generator</dd>
+                </dl>
+            </section>
+
+            <section>
+                <h3>Code for Images</h3>
+                <pre>
+                <code><img src="https://picsum.photos/300/200" alt="Image"></code>
+            </pre>
+                <p>
+                    Press <kbd>F5</kbd> to refresh. Variable: <var>img</var>.
+                    Output: <samp>Loaded</samp>.
+                </p>
+            </section>
+
+            <section>
+                <h3>Image Info</h3>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Image 1</td>
+                            <td>300x200</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">End</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </main>
+
+        <aside>
+            <p><q>Images make websites lively.</q></p>
+        </aside>
+
+        <footer>
+            <p><small>© 2025</small> | <a href="index.html">Home</a></p>
+        </footer>
+    </body>
+</html>
