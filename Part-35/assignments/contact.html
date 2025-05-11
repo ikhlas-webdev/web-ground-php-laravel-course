@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact Us</title>
+    </head>
+    <body>
+        <div>
+            <h1>Contact Us</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+            <section>
+                <h2>Get in Touch</h2>
+                <p>
+                    Reach out via email or phone. We ensure prompt replies and
+                    <strong>effective communication</strong>.
+                </p>
+                <section>
+                    <h2>Responsive Image</h2>
+                    <img
+                        src="https://picsum.photos/450"
+                        srcset="
+                            https://picsum.photos/450   450w,
+                            https://picsum.photos/850   850w,
+                            https://picsum.photos/1500 1500w
+                        "
+                        sizes="(max-width: 480px) 450px, 
+                            (max-width: 900px) 850px, 
+                            (max-width: 1600px) 1500px"
+                        alt="Contact Us Image"
+                    />
+                </section>
+            </section>
+            <footer>
+                <h3>Task</h3>
+                <form>
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Your email"
+                        required
+                    />
+                    <br />
+                    <label for="message">Message:</label>
+                    <input
+                        type="text"
+                        id="message"
+                        placeholder="Your message"
+                        maxlength="200"
+                    />
+                    <br />
+                    <input type="submit" value="Send" />
+                </form>
+            </footer>
+        </div>
+    </body>
+</html>

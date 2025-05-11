@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About Us</title>
+    </head>
+    <body>
+        <div>
+            <h1>About Us</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h2>Who We Are</h2>
+                <p>
+                    We provide <strong>comprehensive</strong> lessons on HTML,
+                    covering <mark>basic</mark> and <ins>advanced</ins> topics.
+                    Learn by examples and practical <i>assignments</i>.
+                </p>
+            </article>
+            <section>
+                <h2>Responsive Image</h2>
+                <img
+                    src="https://picsum.photos/450"
+                    srcset="
+                        https://picsum.photos/450   450w,
+                        https://picsum.photos/850   850w,
+                        https://picsum.photos/1500 1500w
+                    "
+                    sizes="(max-width: 480px) 450px, 
+                        (max-width: 900px) 850px, 
+                        (max-width: 1600px) 1500px"
+                    alt="About Us Image"
+                />
+            </section>
+        </div>
+        <footer>
+            <h3>Task</h3>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your name" required />
+                <br />
+                <label for="bio">Bio:</label>
+                <input
+                    type="text"
+                    id="bio"
+                    placeholder="Write a short bio"
+                    maxlength="50"
+                />
+                <br />
+                <input type="submit" value="Submit" />
+            </form>
+        </footer>
+    </body>
+</html>

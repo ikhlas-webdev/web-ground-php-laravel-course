@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home Page</title>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to Our Website</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Learn HTML</h2>
+                <p>
+                    Explore HTML <b>tags</b>, <i>attributes</i>, and
+                    <mark>more</mark> in this course. Content is dynamic and
+                    <strong>engaging</strong>. Deprecated elements like
+                    <del>font</del> have been replaced by semantic tags like
+                    <ins>strong</ins>.
+                </p>
+            </section>
+            <section>
+                <h2>Topics Overview</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Topic</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML Basics</td>
+                            <td>Tags and Attributes</td>
+                        </tr>
+                        <tr>
+                            <td>Formatting</td>
+                            <td>Bold, Italic, Underline</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <h2>Responsive Image</h2>
+                <img
+                    src="https://picsum.photos/450"
+                    srcset="
+                        https://picsum.photos/450   450w,
+                        https://picsum.photos/850   850w,
+                        https://picsum.photos/1500 1500w
+                    "
+                    sizes="(max-width: 480px) 450px, 
+                        (max-width: 900px) 850px, 
+                        (max-width: 1600px) 1500px"
+                    alt="Demo Image"
+                />
+            </section>
+        </main>
+        <footer>
+            <h3>Assignment</h3>
+            <form>
+                <label for="username">Username:</label>
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter your username"
+                    required
+                />
+                <br />
+                <label for="pwd">Password:</label>
+                <input
+                    type="password"
+                    id="pwd"
+                    placeholder="Enter a password"
+                    required
+                />
+                <br />
+                <label for="comment">Comment:</label>
+                <input
+                    type="text"
+                    id="comment"
+                    placeholder="Write a comment"
+                    spellcheck="true"
+                    maxlength="100"
+                />
+                <br />
+                <input type="submit" value="Submit" />
+            </form>
+        </footer>
+    </body>
+</html>

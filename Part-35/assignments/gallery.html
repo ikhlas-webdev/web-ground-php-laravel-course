@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gallery</title>
+    </head>
+    <body>
+        <div>
+            <h1>Gallery</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+            <section>
+                <h2>Image Collection</h2>
+                <img
+                    src="https://picsum.photos/450"
+                    srcset="
+                        https://picsum.photos/450   450w,
+                        https://picsum.photos/850   850w,
+                        https://picsum.photos/1500 1500w
+                    "
+                    sizes="(max-width: 480px) 450px, 
+                        (max-width: 900px) 850px, 
+                        (max-width: 1600px) 1500px"
+                    alt="Gallery Image"
+                />
+            </section>
+            <footer>
+                <h3>Form Task</h3>
+                <form>
+                    <label for="feedback">Feedback:</label>
+                    <input
+                        type="text"
+                        id="feedback"
+                        placeholder="Share feedback"
+                        spellcheck="true"
+                    />
+                    <br />
+                    <input type="submit" value="Send" />
+                </form>
+            </footer>
+        </div>
+    </body>
+</html>
