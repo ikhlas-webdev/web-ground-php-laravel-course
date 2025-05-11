@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form Example</title>
+    </head>
+    <body>
+        <header>
+            <h1>HTML Forms</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Form Demonstration</h2>
+                <p>
+                    Learn to use <b>text inputs</b>, <i>checkboxes</i>,
+                    <strong>radio buttons</strong>, and more with this form
+                    example.
+                </p>
+            </section>
+            <section>
+                <h2>Responsive Image</h2>
+                <picture>
+                    <source
+                        srcset="https://picsum.photos/850"
+                        media="(min-width: 900px)"
+                    />
+                    <source
+                        srcset="https://picsum.photos/450"
+                        media="(max-width: 899px)"
+                    />
+                    <img
+                        src="https://picsum.photos/450"
+                        alt="Form Example Image"
+                    />
+                </picture>
+            </section>
+        </main>
+        <footer>
+            <h3>Assignment Form</h3>
+            <form>
+                <label for="username">Username:</label>
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter your username"
+                    readonly
+                />
+                <br />
+                <label for="password">Password:</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    maxlength="15"
+                />
+                <br />
+                <label for="gender">Gender:</label>
+                <br />
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Male</label>
+                <br />
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="female">Female</label>
+                <br />
+                <label for="interest">Select Your Interests:</label>
+                <br />
+                <input type="checkbox" id="html" name="interest" value="html" />
+                <label for="html">HTML</label>
+                <br />
+                <input type="checkbox" id="css" name="interest" value="css" />
+                <label for="css">CSS</label>
+                <br />
+                <input type="submit" value="Submit" />
+            </form>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About Us</title>
+    </head>
+    <body>
+        <div>
+            <h1>About Us</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h2>Our Mission</h2>
+                <p>
+                    We aim to teach HTML in a structured, engaging way. From
+                    <b>basics</b> to <mark>advanced topics</mark>, our lessons
+                    cater to all levels. Learn via
+                    <strong>real-world examples</strong>.
+                </p>
+            </article>
+            <section>
+                <h2>Responsive Image</h2>
+                <picture>
+                    <source
+                        srcset="https://picsum.photos/850"
+                        media="(min-width: 900px)"
+                    />
+                    <source
+                        srcset="https://picsum.photos/450"
+                        media="(max-width: 899px)"
+                    />
+                    <img src="https://picsum.photos/450" alt="About Us Image" />
+                </picture>
+            </section>
+            <footer>
+                <h3>Form Assignment</h3>
+                <form>
+                    <label for="fullname">Full Name:</label>
+                    <input
+                        type="text"
+                        id="fullname"
+                        placeholder="Your full name"
+                        autofocus
+                    />
+                    <br />
+                    <label for="bio">Bio:</label>
+                    <input
+                        type="text"
+                        id="bio"
+                        placeholder="Short bio"
+                        maxlength="100"
+                    />
+                    <br />
+                    <label for="skills">Select your skill set:</label>
+                    <br />
+                    <input
+                        type="checkbox"
+                        id="coding"
+                        name="skills"
+                        value="coding"
+                    />
+                    <label for="coding">Coding</label>
+                    <br />
+                    <input
+                        type="checkbox"
+                        id="design"
+                        name="skills"
+                        value="design"
+                    />
+                    <label for="design">Design</label>
+                    <br />
+                    <label for="experience">Experience Level:</label>
+                    <br />
+                    <input
+                        type="radio"
+                        id="beginner"
+                        name="experience"
+                        value="beginner"
+                    />
+                    <label for="beginner">Beginner</label>
+                    <br />
+                    <input
+                        type="radio"
+                        id="advanced"
+                        name="experience"
+                        value="advanced"
+                    />
+                    <label for="advanced">Advanced</label>
+                    <br />
+                    <input type="submit" value="Submit" />
+                </form>
+            </footer>
+        </div>
+    </body>
+</html>
+    

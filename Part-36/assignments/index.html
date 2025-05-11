@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home Page</title>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to Our Website</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>HTML Learning Path</h2>
+                <p>
+                    This site provides step-by-step tutorials on HTML. Learn to
+                    use
+                    <b>tags</b>, <i>attributes</i>, <strong>formatting</strong>,
+                    and more. Key topics include <mark>HTML basics</mark>,
+                    <ins>styling</ins>, and <del>deprecated elements</del>.
+                </p>
+            </section>
+            <section>
+                <h2>Responsive Image Example</h2>
+                <picture>
+                    <source
+                        srcset="https://picsum.photos/850"
+                        media="(min-width: 900px)"
+                    />
+                    <source
+                        srcset="https://picsum.photos/450"
+                        media="(max-width: 899px)"
+                    />
+                    <img
+                        src="https://picsum.photos/450"
+                        alt="Home Page Image"
+                    />
+                </picture>
+            </section>
+        </main>
+        <footer>
+            <h3>Assignment Form</h3>
+            <form>
+                <label for="username">Username:</label>
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter your username"
+                    required
+                />
+                <br />
+                <label for="password">Password:</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    required
+                />
+                <br />
+                <label for="topics">Choose your learning topics:</label>
+                <br />
+                <input
+                    type="checkbox"
+                    id="basics"
+                    name="topics"
+                    value="basics"
+                />
+                <label for="basics">HTML Basics</label>
+                <br />
+                <input
+                    type="checkbox"
+                    id="formatting"
+                    name="topics"
+                    value="formatting"
+                />
+                <label for="formatting">Text Formatting</label>
+                <br />
+                <label for="preference">Preferred Learning Style:</label>
+                <br />
+                <input
+                    type="radio"
+                    id="visual"
+                    name="learning"
+                    value="visual"
+                />
+                <label for="visual">Visual</label>
+                <br />
+                <input
+                    type="radio"
+                    id="textual"
+                    name="learning"
+                    value="textual"
+                />
+                <label for="textual">Textual</label>
+                <br />
+                <input type="submit" value="Submit" />
+            </form>
+        </footer>
+    </body>
+</html>

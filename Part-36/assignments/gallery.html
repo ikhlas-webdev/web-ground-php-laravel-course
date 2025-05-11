@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gallery</title>
+    </head>
+    <body>
+        <div>
+            <h1>Gallery</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+            <section>
+                <h2>Image Collection</h2>
+                <picture>
+                    <source
+                        srcset="https://picsum.photos/850"
+                        media="(min-width: 900px)"
+                    />
+                    <source
+                        srcset="https://picsum.photos/450"
+                        media="(max-width: 899px)"
+                    />
+                    <img src="https://picsum.photos/450" alt="Gallery Image" />
+                </picture>
+            </section>
+            <footer>
+                <h3>Assignment</h3>
+                <form>
+                    <label for="favorite">Favorite Image Type:</label>
+                    <br />
+                    <input
+                        type="radio"
+                        id="landscape"
+                        name="image_type"
+                        value="landscape"
+                    />
+                    <label for="landscape">Landscape</label>
+                    <br />
+                    <input
+                        type="radio"
+                        id="portrait"
+                        name="image_type"
+                        value="portrait"
+                    />
+                    <label for="portrait">Portrait</label>
+                    <br />
+                    <label for="categories"
+                        >Select your favorite categories:</label
+                    >
+                    <br />
+                    <input
+                        type="checkbox"
+                        id="nature"
+                        name="categories"
+                        value="nature"
+                    />
+                    <label for="nature">Nature</label>
+                    <br />
+                    <input
+                        type="checkbox"
+                        id="architecture"
+                        name="categories"
+                        value="architecture"
+                    />
+                    <label for="architecture">Architecture</label>
+                    <br />
+                    <input type="submit" value="Submit" />
+                </form>
+            </footer>
+        </div>
+    </body>
+</html>
