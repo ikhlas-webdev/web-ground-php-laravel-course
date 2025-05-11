@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home Page</title>
+    </head>
+    <body>
+        <div>
+            <h1>Welcome to Our Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h2>Introduction</h2>
+                <p>
+                    This is a <b>demo website</b> designed for students. You can
+                    learn <i>HTML concepts</i> step by step. Important notes are
+                    <mark>highlighted</mark>, and
+                    <strong>key terms are emphasized</strong>.
+                </p>
+            </div>
+            <div>
+                <h2>Responsive Image</h2>
+                <picture>
+                    <source
+                        srcset="https://picsum.photos/450"
+                        media="(max-width: 480px)"
+                    />
+                    <source
+                        srcset="https://picsum.photos/850"
+                        media="(max-width: 900px)"
+                    />
+                    <img
+                        src="https://picsum.photos/1500"
+                        alt="Demo Image"
+                        width="100%"
+                    />
+                </picture>
+            </div>
+            <div>
+                <h2>Form</h2>
+                <form>
+                    <fieldset>
+                        <legend>Personal Info</legend>
+                        <p>
+                            <label for="fname">First Name</label>
+                            <input
+                                type="text"
+                                id="fname"
+                                placeholder="Enter your first name"
+                                required
+                            />
+                        </p>
+                        <p>
+                            <label for="lname">Last Name</label>
+                            <input
+                                type="text"
+                                id="lname"
+                                placeholder="Enter your last name"
+                                required
+                            />
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Preferences</legend>
+                        <p>
+                            <label for="amount">Amount</label>
+                            <input
+                                type="number"
+                                id="amount"
+                                min="10"
+                                max="100"
+                                step="5"
+                                value="50"
+                            />
+                        </p>
+                        <p>
+                            <label for="price">Price Range</label>
+                            <input
+                                type="range"
+                                id="price"
+                                min="1000"
+                                max="10000"
+                                step="1000"
+                                value="5000"
+                            />
+                        </p>
+                        <p>
+                            <label for="color">Favorite Color</label>
+                            <input type="color" id="color" value="#ff0000" />
+                        </p>
+                        <p>
+                            <input type="submit" value="Submit" />
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

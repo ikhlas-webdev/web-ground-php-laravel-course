@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gallery</title>
+    </head>
+    <body>
+        <div>
+            <h1>Gallery</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h2>Photo Gallery</h2>
+                <p>Enjoy our collection of beautiful images.</p>
+                <picture>
+                    <source
+                        srcset="https://picsum.photos/450"
+                        media="(max-width: 480px)"
+                    />
+                    <source
+                        srcset="https://picsum.photos/850"
+                        media="(max-width: 900px)"
+                    />
+                    <img
+                        src="https://picsum.photos/1500"
+                        alt="Gallery Image"
+                        width="100%"
+                    />
+                </picture>
+            </div>
+            <div>
+                <h2>Form</h2>
+                <form>
+                    <fieldset>
+                        <legend>User Feedback</legend>
+                        <p>
+                            <label for="search">Search Gallery</label>
+                            <input
+                                type="search"
+                                id="search"
+                                placeholder="Search images"
+                            />
+                        </p>
+                        <p>
+                            <label for="url">Gallery URL</label>
+                            <input
+                                type="url"
+                                id="url"
+                                placeholder="Paste a URL"
+                            />
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Rating</legend>
+                        <p>
+                            <label for="amount">Rating</label>
+                            <input
+                                type="number"
+                                id="amount"
+                                min="1"
+                                max="10"
+                                step="1"
+                                value="5"
+                            />
+                        </p>
+                        <p>
+                            <label for="price">Satisfaction Level</label>
+                            <input
+                                type="range"
+                                id="price"
+                                min="1"
+                                max="100"
+                                step="10"
+                                value="50"
+                            />
+                        </p>
+                        <p>
+                            <label for="color">Preferred Theme Color</label>
+                            <input type="color" id="color" value="#00ff00" />
+                        </p>
+                        <p>
+                            <input type="submit" value="Submit" />
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
