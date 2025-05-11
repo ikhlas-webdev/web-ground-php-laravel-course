@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Media - Learning Hub</title>
+    </head>
+    <body>
+        <header>
+            <h1 title="Media Gallery">Media Gallery</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="survey.html">Survey</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Explore Media</h2>
+                <p>
+                    Enjoy our <mark>curated</mark> collection of
+                    <strong>learning media</strong>.
+                </p>
+                <div>
+                    <picture>
+                        <source
+                            media="(max-width: 600px)"
+                            srcset="https://picsum.photos/200/150?random=4"
+                        />
+                        <img
+                            src="https://picsum.photos/300/200?random=5"
+                            alt="Responsive Image"
+                        />
+                    </picture>
+                    <p><small>Responsive Image</small></p>
+                </div>
+                <div>
+                    <video
+                        width="300"
+                        height="200"
+                        controls
+                        preload="metadata"
+                        poster="https://picsum.photos/300/200?random=6"
+                    >
+                        <source
+                            src="https://cdn.pixabay.com/video/2023/03/06/152940-805027999_tiny.mp4"
+                            type="video/mp4"
+                        />
+                        Video not supported.
+                    </video>
+                    <p><small>Learning Video</small></p>
+                </div>
+                <div>
+                    <audio controls loop>
+                        <source
+                            src="https://cdn.pixabay.com/audio/2022/03/24/03-15-33-363_96k.mp3"
+                            type="audio/mp3"
+                        />
+                        Audio not supported.
+                    </audio>
+                    <p><small>Background Audio (Looping)</small></p>
+                </div>
+                <hr />
+            </section>
+
+            <section>
+                <h3>Image Map</h3>
+                <img
+                    src="https://picsum.photos/300/200?random=7"
+                    alt="Interactive Image"
+                    usemap="#media-map"
+                />
+                <map name="media-map">
+                    <area
+                        shape="rect"
+                        coords="50,50,150,150"
+                        href="https://www.youtube.com"
+                        alt="YouTube Link"
+                    />
+                </map>
+            </section>
+
+            <section>
+                <h3>Media List</h3>
+                <ol>
+                    <li>
+                        <a href="https://picsum.photos/300/200?random=8"
+                            >Image Sample</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://cdn.pixabay.com/video/2023/03/06/152940-805027999_tiny.mp4"
+                            >Video Sample</a
+                        >
+                    </li>
+                </ol>
+                <dl>
+                    <dt>Media</dt>
+                    <dd>Visual and audio content</dd>
+                </dl>
+            </section>
+
+            <section>
+                <h3>Media Code</h3>
+                <pre>
+                <code>&lt;audio controls&gt;&lt;source src="audio.mp3"&gt;&lt;/audio&gt;</code>
+            </pre>
+                <p>
+                    Use <kbd>Space</kbd> to play. Variable: <var>sound</var>.
+                    Output: <samp>Playing</samp>.
+                </p>
+            </section>
+
+            <section>
+                <h3>Media Stats</h3>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Count</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Images</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Videos</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Total: 8</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </main>
+
+        <aside>
+            <p><q>Media inspires learning.</q></p>
+        </aside>
+
+        <footer>
+            <p><small>© 2025</small> | <a href="index.html">Home</a></p>
+        </footer>
+    </body>
+</html>

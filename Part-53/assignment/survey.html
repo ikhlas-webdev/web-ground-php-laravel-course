@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Survey - Learning Hub</title>
+    </head>
+    <body>
+        <header>
+            <h1 title="Survey Page">Learning Survey</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="survey.html">Survey</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Your Feedback</h2>
+                <form action="#" method="post">
+                    <div>
+                        <label for="fullname">Full Name:</label><br />
+                        <input
+                            type="text"
+                            id="fullname"
+                            name="fullname"
+                            placeholder="Your Name"
+                            required
+                            maxlength="100"
+                            spellcheck="true"
+                            autofocus
+                        />
+                    </div>
+                    <div>
+                        <label for="email">Email:</label><br />
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label for="website">Website:</label><br />
+                        <input
+                            type="url"
+                            id="website"
+                            name="website"
+                            placeholder="http://your-site.com"
+                        />
+                    </div>
+                    <div>
+                        <label for="phone">Phone:</label><br />
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            pattern="[0-9]{10}"
+                            placeholder="10-digit number"
+                        />
+                    </div>
+                    <div>
+                        <label for="age">Age:</label><br />
+                        <input
+                            type="number"
+                            id="age"
+                            name="age"
+                            min="13"
+                            max="120"
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label for="startdate">Start Date:</label><br />
+                        <input type="date" id="startdate" name="startdate" />
+                    </div>
+                    <div>
+                        <label for="eventtime">Event Time:</label><br />
+                        <input
+                            type="datetime-local"
+                            id="eventtime"
+                            name="eventtime"
+                        />
+                    </div>
+                    <div>
+                        <label for="week">Preferred Week:</label><br />
+                        <input type="week" id="week" name="week" />
+                    </div>
+                    <div>
+                        <label for="color">Favorite Color:</label><br />
+                        <input type="color" id="color" name="color" />
+                    </div>
+                    <div>
+                        <label for="rating">Rating (0-10):</label><br />
+                        <input
+                            type="range"
+                            id="rating"
+                            name="rating"
+                            min="0"
+                            max="10"
+                        />
+                    </div>
+                    <div>
+                        <label>Experience Level:</label><br />
+                        <input
+                            type="radio"
+                            id="beginner"
+                            name="level"
+                            value="beginner"
+                        />
+                        <label for="beginner">Beginner</label><br />
+                        <input
+                            type="radio"
+                            id="advanced"
+                            name="level"
+                            value="advanced"
+                        />
+                        <label for="advanced">Advanced</label>
+                    </div>
+                    <div>
+                        <label>Interests:</label><br />
+                        <input
+                            type="checkbox"
+                            id="coding"
+                            name="interest"
+                            value="coding"
+                        />
+                        <label for="coding">Coding</label><br />
+                        <input
+                            type="checkbox"
+                            id="design"
+                            name="interest"
+                            value="design"
+                        />
+                        <label for="design">Design</label>
+                    </div>
+                    <div>
+                        <label for="country">Country:</label><br />
+                        <input
+                            type="text"
+                            id="country"
+                            name="country"
+                            list="countries"
+                            placeholder="Type or select"
+                        />
+                        <datalist id="countries">
+                            <option value="USA"></option>
+                            <option value="India"></option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <label for="feedback">Feedback:</label><br />
+                        <textarea
+                            id="feedback"
+                            name="feedback"
+                            rows="3"
+                            cols="40"
+                            placeholder="Your thoughts"
+                            readonly
+                        >
+Sample text</textarea
+                        >
+                    </div>
+                    <div>
+                        <label>Completion:</label><br />
+                        <progress value="80" max="100"></progress>
+                    </div>
+                    <div>
+                        <label>Satisfaction:</label><br />
+                        <meter value="90" min="0" max="100"></meter>
+                    </div>
+                    <br />
+                    <input type="submit" value="Send" disabled />
+                </form>
+                <hr />
+            </section>
+
+            <section>
+                <h3>Survey Media</h3>
+                <div>
+                    <img
+                        src="https://picsum.photos/300/200?random=10"
+                        alt="Survey Image"
+                    />
+                    <p><small>Survey Visual</small></p>
+                </div>
+                <div>
+                    <video
+                        width="300"
+                        height="200"
+                        controls
+                        poster="https://picsum.photos/300/200?random=11"
+                    >
+                        <source
+                            src="https://cdn.pixabay.com/video/2024/03/03/202959-920650082_tiny.mp4"
+                            type="video/mp4"
+                        />
+                        Video not supported.
+                    </video>
+                    <p><small>Survey Video</small></p>
+                </div>
+                <div>
+                    <audio controls autoplay>
+                        <source
+                            src="https://cdn.pixabay.com/audio/2022/03/24/03-15-33-363_96k.mp3"
+                            type="audio/mp3"
+                        />
+                        Audio not supported.
+                    </audio>
+                    <p><small>Survey Audio (Autoplay)</small></p>
+                </div>
+            </section>
+
+            <section>
+                <h3>Survey Details</h3>
+                <ul>
+                    <li>Questions</li>
+                    <li>
+                        Responses
+                        <ol>
+                            <li>Text</li>
+                            <li>Choices</li>
+                        </ol>
+                    </li>
+                </ul>
+                <dl>
+                    <dt>Survey</dt>
+                    <dd>Collect feedback</dd>
+                </dl>
+            </section>
+
+            <section>
+                <h3>Form Code</h3>
+                <pre>
+                <code>&lt;form&gt;&lt;input type="text"&gt;&lt;/form&gt;</code>
+            </pre>
+                <p>
+                    Use <kbd>Ctrl + S</kbd> to save. Variable: <var>form</var>.
+                    Output: <samp>Saved</samp>.
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p><small>© 2025</small> | <a href="index.html">Home</a></p>
+        </footer>
+    </body>
+</html>
