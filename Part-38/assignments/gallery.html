@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gallery Page</title>
+    </head>
+    <body>
+        <header>
+            <h1>Gallery</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Featured Images</h2>
+                <picture>
+                    <source
+                        srcset="https://picsum.photos/850"
+                        media="(min-width: 900px)"
+                    />
+                    <source
+                        srcset="https://picsum.photos/450"
+                        media="(max-width: 899px)"
+                    />
+                    <img src="https://picsum.photos/450" alt="Gallery Image" />
+                </picture>
+            </section>
+        </main>
+        <footer>
+            <h3>Assignment Form</h3>
+            <form>
+                <label for="fullname">Full Name:</label>
+                <input
+                    type="text"
+                    id="fullname"
+                    placeholder="Enter your full name"
+                    required
+                />
+                <br />
+                <label for="email">Email Address:</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                />
+                <br />
+                <label for="favorite-img">Favorite Image ID:</label>
+                <input
+                    type="text"
+                    id="favorite-img"
+                    placeholder="Enter image ID or URL"
+                />
+                <br />
+                <label for="image-type">Image Type:</label>
+                <br />
+                <input
+                    type="radio"
+                    id="landscape"
+                    name="image-type"
+                    value="landscape"
+                />
+                <label for="landscape">Landscape</label>
+                <br />
+                <input
+                    type="radio"
+                    id="portrait"
+                    name="image-type"
+                    value="portrait"
+                />
+                <label for="portrait">Portrait</label>
+                <br />
+                <label for="tags">Choose Tags:</label>
+                <br />
+                <input type="checkbox" id="nature" name="tags" value="nature" />
+                <label for="nature">Nature</label>
+                <br />
+                <input type="checkbox" id="urban" name="tags" value="urban" />
+                <label for="urban">Urban</label>
+                <br />
+                <label for="search">Search for Images:</label>
+                <input type="search" id="search" placeholder="Search images" />
+                <br />
+                <input type="submit" value="Submit" />
+            </form>
+        </footer>
+    </body>
+</html>

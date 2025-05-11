@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About Page</title>
+    </head>
+    <body>
+        <header>
+            <h1>About Us</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Our Mission</h2>
+                <p>
+                    We aim to provide high-quality tutorials for aspiring
+                    <strong>web developers</strong>. We emphasize
+                    <mark>practice-based learning</mark> to help you
+                    <i>master core concepts</i>.
+                </p>
+            </section>
+            <section>
+                <h2>Responsive Image</h2>
+                <picture>
+                    <source
+                        srcset="https://picsum.photos/850"
+                        media="(min-width: 900px)"
+                    />
+                    <source
+                        srcset="https://picsum.photos/450"
+                        media="(max-width: 899px)"
+                    />
+                    <img
+                        src="https://picsum.photos/450"
+                        alt="Responsive Image"
+                    />
+                </picture>
+            </section>
+        </main>
+        <footer>
+            <h3>Assignment Form</h3>
+            <form>
+                <label for="fullname">Full Name:</label>
+                <input
+                    type="text"
+                    id="fullname"
+                    placeholder="Enter your full name"
+                    required
+                />
+                <br />
+                <label for="email">Email Address:</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                />
+
+                <br />
+                <label for="contact">Phone Number:</label>
+                <input
+                    type="tel"
+                    id="contact"
+                    placeholder="Enter your phone number"
+                />
+                <br />
+                <label for="preferences">Preferred Learning Style:</label>
+                <br />
+                <input
+                    type="radio"
+                    id="visual"
+                    name="preferences"
+                    value="visual"
+                />
+                <label for="visual">Visual</label>
+                <br />
+                <input
+                    type="radio"
+                    id="hands-on"
+                    name="preferences"
+                    value="hands-on"
+                />
+                <label for="hands-on">Hands-On</label>
+                <br />
+                <label for="topics">Topics of Interest:</label>
+                <br />
+                <input type="checkbox" id="js" name="topics" value="js" />
+                <label for="js">JavaScript</label>
+                <br />
+                <input type="checkbox" id="php" name="topics" value="php" />
+                <label for="php">PHP</label>
+                <br />
+                <label for="comments">Comments:</label>
+                <input
+                    type="text"
+                    id="comments"
+                    placeholder="Your comments or feedback"
+                />
+                <br />
+                <input type="submit" value="Submit" />
+            </form>
+        </footer>
+    </body>
+</html>

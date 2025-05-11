@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact Page</title>
+    </head>
+    <body>
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Get in Touch</h2>
+                <p>
+                    Feel free to contact us through the form below or reach out
+                    via email or phone.
+                </p>
+            </section>
+            <section>
+                <h2>Our Office Location</h2>
+                <picture>
+                    <source
+                        srcset="https://picsum.photos/850"
+                        media="(min-width: 900px)"
+                    />
+                    <source
+                        srcset="https://picsum.photos/450"
+                        media="(max-width: 899px)"
+                    />
+                    <img
+                        src="https://picsum.photos/450"
+                        alt="Office Location"
+                    />
+                </picture>
+            </section>
+        </main>
+        <footer>
+            <h3>Contact Form</h3>
+            <form>
+                <label for="fullname">Full Name:</label>
+                <input
+                    type="text"
+                    id="fullname"
+                    placeholder="Enter your full name"
+                    required
+                />
+                <br />
+                <label for="email">Email Address:</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                />
+                <br />
+                <label for="phone">Phone Number:</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter your phone number"
+                />
+                <br />
+                <label for="contact-method">Preferred Contact Method:</label>
+                <br />
+                <input
+                    type="radio"
+                    id="email-contact"
+                    name="contact-method"
+                    value="email"
+                />
+                <label for="email-contact">Email</label>
+                <br />
+                <input
+                    type="radio"
+                    id="phone-contact"
+                    name="contact-method"
+                    value="phone"
+                />
+                <label for="phone-contact">Phone</label>
+                <br />
+                <label for="query-type">Type of Query:</label>
+                <br />
+                <input
+                    type="checkbox"
+                    id="support"
+                    name="query-type"
+                    value="support"
+                />
+                <label for="support">Support</label>
+                <br />
+                <input
+                    type="checkbox"
+                    id="feedback"
+                    name="query-type"
+                    value="feedback"
+                />
+                <label for="feedback">Feedback</label>
+                <br />
+                <label for="url">Your Website (optional):</label>
+                <input
+                    type="url"
+                    id="url"
+                    placeholder="Enter your website URL"
+                />
+                <br />
+
+                <input type="submit" value="Submit" />
+            </form>
+        </footer>
+    </body>
+</html>

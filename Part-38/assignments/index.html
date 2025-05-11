@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home Page</title>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to Our Website</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Introduction</h2>
+                <p>
+                    This is a <b>demo website</b> designed for students. You can
+                    learn <i>HTML concepts</i> step by step. Important notes are
+                    <mark>highlighted</mark>, and
+                    <strong>key terms are emphasized</strong>. Some changes
+                    <del>are removed</del> while others <ins>are inserted</ins>.
+                </p>
+            </section>
+            <section>
+                <h2>Topics Table</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Topics Covered</th>
+                            <th>Additional Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">HTML Basics</td>
+                            <td>Tags</td>
+                            <td rowspan="2">Core concepts</td>
+                        </tr>
+                        <tr>
+                            <td>Attributes</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Keep Practicing!</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section>
+                <h2>Responsive Image</h2>
+                <picture>
+                    <source
+                        srcset="https://picsum.photos/850"
+                        media="(min-width: 900px)"
+                    />
+                    <source
+                        srcset="https://picsum.photos/450"
+                        media="(max-width: 899px)"
+                    />
+                    <img src="https://picsum.photos/450" alt="Demo Image" />
+                </picture>
+            </section>
+        </main>
+        <footer>
+            <h3>Assignment Form</h3>
+            <form>
+                <label for="fullname">Full Name:</label>
+                <input
+                    type="text"
+                    id="fullname"
+                    placeholder="Enter your full name"
+                    required
+                />
+                <br />
+                <label for="email">Email Address:</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                />
+                <br />
+                <label for="url">Your Website:</label>
+                <input
+                    type="url"
+                    id="url"
+                    placeholder="Enter your website URL"
+                />
+                <br />
+                <label for="gender">Gender:</label>
+                <br />
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Male</label>
+                <br />
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="female">Female</label>
+                <br />
+                <label for="interests">Select Your Interests:</label>
+                <br />
+                <input
+                    type="checkbox"
+                    id="html"
+                    name="interests"
+                    value="html"
+                />
+                <label for="html">HTML</label>
+                <br />
+                <input type="checkbox" id="css" name="interests" value="css" />
+                <label for="css">CSS</label>
+                <br />
+                <label for="message">Your Message:</label>
+                <input
+                    type="search"
+                    id="message"
+                    placeholder="Search or write your message"
+                />
+                <br />
+                <input type="submit" value="Submit" />
+            </form>
+        </footer>
+    </body>
+</html>
